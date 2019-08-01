@@ -1,0 +1,64 @@
+﻿<Page x:Class="UIElementVisual.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:UIElementVisual"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      x:Name="pp"
+      Loaded="Pp_Loaded"  
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+  <Grid x:Name="gg"
+        Width="700"
+        Height="500"
+        BorderBrush="Gold"
+        BorderThickness="4">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="200" />
+    </Grid.RowDefinitions>
+    <Button x:Name="bb"
+            Content="Get Sizes"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="8"
+            Click="Bb_Click" />
+    <Button x:Name="b2"
+            Content="Get Sizes 2"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Right"
+            Margin="8"
+            Grid.Column="1"
+            Click="B2_Click"
+             />
+    <Button x:Name="b3"
+            Content="Get One Size"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="8"
+            Grid.Column="1"
+            Click="B3_Click" />
+    <Canvas x:Name="cc"
+            Width="200"
+            Height="100">
+      <Rectangle  x:Name="rr"
+                 Canvas.Left="0"
+                 Canvas.Top="0"
+                 Fill="Red"
+                 Width="190"
+                 Height="90" />
+    </Canvas>
+    <TextBox x:Name="tt"
+             Height="200"
+             TextWrapping="Wrap"
+             AcceptsReturn="True"
+             Grid.Row="1"
+             Grid.ColumnSpan="2"/>
+
+  </Grid>
+</Page>
